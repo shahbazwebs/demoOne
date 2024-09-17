@@ -24,6 +24,7 @@ body{
     background-image: url('../images/fort_img.webp');
     background-size: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .cloud_left{
     position: absolute;
@@ -49,6 +50,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
+    background-attachment: fixed;
 }
 .fadeInLeftCloud,
 .fadeInRightCloud{

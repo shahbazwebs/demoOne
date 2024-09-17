@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="assests/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <div class="homeSectoin">
         <span class="fort_img"></span>
@@ -29,7 +31,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="aboutChina">
-                        <p>China’s first emperor, Emperor Qin Shi Huang is known for his relentless pursuit of unity and power, but what often goes unnoticed is how his visionary approach prefigured many principles of modern design thinking. As designers today, we strive for seamless user experiences, systematic efficiency, and lasting impact—principles that Qin Shi Huang instinctively grasped over 2,000 years ago.</p>
+                        <p>China’s first emperor, Emperor Qin Shi Huang is known for his relentless pursuit of unity and
+                            power, but what often goes unnoticed is how his visionary approach prefigured many
+                            principles of modern design thinking. As designers today, we strive for seamless user
+                            experiences, systematic efficiency, and lasting impact—principles that Qin Shi Huang
+                            instinctively grasped over 2,000 years ago.</p>
                     </div>
                 </div>
             </div>
@@ -41,6 +47,7 @@
     var $horizontal = $('#hori');
     var $heart = $('#heart');
     var $horizontal2 = $('#hori2');
+    
     $(window).scroll(function () {
         var s = $(this).scrollTop(),
             d = $(document).height(),
@@ -48,31 +55,32 @@
 
         scrollPercent = (s / (d - c));
 
-        var position = (scrollPercent * ($(document).width()/2 - $horizontal.width()));
-        var position = (scrollPercent * ($(document).width()/2 - $horizontal2.width()));
-        
-        
-    
+        var position = (scrollPercent * ($(document).width() / 2 - $horizontal.width()));
+        var position = (scrollPercent * ($(document).width() / 2 - $horizontal2.width()));
+
+
+
         $horizontal.css({
             'left': position
         });
-        
+
         $horizontal2.css({
             'right': position
         });
-      
-        if(s>400){
- $heart.css({
-     'OPACITY': '1'
- })
 
-        } 
-               if(s<400){
- $heart.css({
-     'opacity': '1'
- })
-        }
-    
+        // if (s > 400) {
+        //     $heart.css({
+        //         'OPACITY': '1'
+        //     })
+
+        // }
+        // if (s < 400) {
+        //     $heart.css({
+        //         'opacity': '1'
+        //     })
+        // }
+
     });
 </script>
+
 </html>
