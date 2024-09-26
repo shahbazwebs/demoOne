@@ -204,39 +204,13 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- <script>
-    // var $horizontal = $('#hori');
-    // var $heart = $('#heart');
-    // var $horizontal2 = $('#hori2');
-    
-    // $(window).scroll(function () {
-    //     var s = $(this).scrollTop(),
-    //         d = $(document).height(),
-    //         c = $(this).height();
-
-    //     scrollPercent = (s / (d - c));
-
-    //     var position = (scrollPercent * ($(document).width() / 2 - $horizontal.width()));
-    //     var position = (scrollPercent * ($(document).width() / 2 - $horizontal2.width()));
-
-
-
-    //     $horizontal.css({
-    //         'left': position
-    //     });
-
-    //     $horizontal2.css({
-    //         'right': position
-    //     });
-
-    // });
-    $(".fadeInLeftCloud").each(function () {
-        var windowTop = $(window).scrollTop();
-        var elementTop = $(this).offset().top;
-        var leftPosition = -windowTop - elementTop;
-        // console.log(leftPosition);
-        $(".fadeInLeftCloud").css({ 'transform': "translateX(" + leftPosition + "px) translateY(11px)" });
+<script>
+    $(window).scroll(function(){
+  var topMenus = $('.topMenus'),
+      scroll = $(window).scrollTop();
+        if (scroll >= 200) topMenus.addClass('fixed');
+        else topMenus.removeClass('fixed');
     });
-</script> -->
+</script>
 
 </html>
