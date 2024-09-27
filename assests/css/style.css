@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* font-family: "Bona Nova", serif; */
+/* font-family: "Inter", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
 body,html{
     height: 100%;
     font-family: "Inter", sans-serif;
@@ -189,10 +192,82 @@ body{
         
     }
 }
+.learnMoreSection .chevron{
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    width: 24px;
+    height: 2px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+    margin: 0 auto;
+}
+.textReadMore{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    margin: 0 auto;
+    text-align: center;
+  }
+.learnMoreSection .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+.learnMoreSection .chevron:nth-child(2) {
+animation: move 3s ease-out 2s infinite;
+}  
+.learnMoreSection .chevron:before,
+.learnMoreSection .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #000000;
+  }
+  
+.learnMoreSection .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+  
+.learnMoreSection .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+
 .aboutUsSection{
     position: relative;
-    padding: 100px 0;
-    background-image: url('../images/Background_texture.png');
+    padding: 70px 0;
+    /* background-image: url('../images/Background_texture.png'); */
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -229,6 +304,7 @@ body{
     .aboutUsCotainer,
     .ConclusionSection{
         max-width: 1320px;
+        padding: 0 20px;
     }
     .aboutChina p{
         font-size: 26px;
@@ -238,6 +314,7 @@ body{
     .aboutUsCotainer,
     .ConclusionSection{
         max-width: 1140px;
+        padding: 0 20px;
     }
 }
 @media(max-width: 767px){
@@ -258,16 +335,18 @@ body{
 .AncientDesigns{
     position: relative;
     max-width: 1416px;
-    margin: 70px auto 70px;
+    margin: 0px auto 70px;
 }
 @media(max-width: 1440px){
     .AncientDesigns{
         max-width: 1320px;
+        padding: 0 20px;
     }
 }
 @media(max-width: 1366px){
     .AncientDesigns{
         max-width: 1140px;
+        padding: 0 20px;
     }
 }
 .AncientDesigns .container{
@@ -286,14 +365,18 @@ body{
     margin-bottom: 24px;
     color: #000000;
     font-weight: 600;
+    font-family: "Roboto", sans-serif;
 }
 .AncientDesigns p{
     font-size: 16px;
     margin-bottom: 24px;
     color: #5E5F66;
+    font-family: "Roboto", sans-serif;
 }
 .AncientDesigns p span{
     font-weight: 600;
+    color: #0E0E0E;
+    font-family: "Roboto", sans-serif;
 }
 .RebrandingSection{
     margin-top: 0 !important;
@@ -347,6 +430,12 @@ body{
 .AncientDesigns .lessonTodayDesigner{
     position: relative;
 }
+.AncientDesigns .lessonTodayDesigner h3{
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
 .AncientDesigns .lessonTodayDesigner ol{
     padding: 0 0 0 20px;
     margin: 0;
@@ -356,6 +445,10 @@ body{
 }
 .AncientDesigns .lessonTodayDesigner ol li p{
     margin: 0;
+}
+.AncientDesigns .lessonTodayDesigner ol li p span{
+    font-weight: 600;
+    color: #000000;
 }
 .AncientDesigns .lessonTodayDesigner ol li:last-child{
     margin: 0;
@@ -481,4 +574,213 @@ body{
     .exploreMoreSection .exploreCards img{
         max-width: 96%;
     }
+}
+
+
+.disneysHomeSection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/disneys_images/mainBg.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media(max-width: 767px){
+    .disneysHomeSection{
+        background-size: cover;
+    }
+}
+.disneysHomeSection .topMenus{
+    border-color: #FFFFFF;
+}
+.disneysHomeSection .topMenus.fixed{
+    background-color: #000000;
+}
+.disneysHomeSection .topMenus ul li a{
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;   
+    padding: 12px 14px;
+}
+@media(max-width: 575px){
+    .disneysHomeSection .topMenus ul li a{
+        padding: 12px 10px;
+    }
+}
+.disneysHomeSection .homeContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.disneysHomeSection .homeContainer h1{
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+@media(max-width: 767px){
+    .disneysHomeSection .homeContainer h1{
+        padding: 0 20px;
+    }
+}
+@media(max-width: 1440px){
+    .disneysHomeSection .homeContainer h1{
+        margin-top: -150px;
+    }
+}
+.disneysHomeSection .homeContainer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disneysHomeSection .homeContainer ul li{
+    background-color: rgba(225,225,225,0.9);
+    width: 180px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #FAF9F6;
+    margin-right: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FAF9F6;
+}
+.disneysHomeSection .homeContainer ul li:last-child{
+    margin-right: 0;
+}
+@media(max-width: 600px){
+    .disneysHomeSection .homeContainer ul{
+        flex-direction: column;
+    }
+    .disneysHomeSection .homeContainer ul li{
+        margin: 0 0 12px 0;
+    }
+}
+.disneysHomeSection .learnMoreSection .textReadMore{
+    color: #FFFFFF;
+}
+.disneysHomeSection .learnMoreSection .chevron::before,
+.disneysHomeSection .learnMoreSection .chevron::after{
+    background-color: #FFFFFF;
+}
+.mainContianer{
+    position: relative;
+    max-width: 1416px;
+    margin: 0px auto 70px;
+}
+.mainContianer .container{
+    position: relative;
+    max-width: 100%;
+    padding: 0 20px;
+}
+.mainContianer h2{
+    color: #0E0E0E;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 16px;
+}
+@media(max-width: 1440px){
+    .mainContianer{
+        max-width: 1320px;
+    }
+}
+@media(max-width: 1366px){
+    .mainContianer{
+        max-width: 1140px;
+    }
+}
+@media(max-width: 1024px){
+    .mainContianer h2{
+        font-size: 22px;
+    }
+}
+.disneysAboutUs p{
+    position: relative;
+    margin: 60px 0 0 0;
+    font-family: "Bona Nova", serif;
+    font-size: 24px;
+    line-height: 36px;   
+}
+.CreativeThinkingProcess{
+    position: relative;
+}
+.CreativeThinkingProcessContainer p,
+.TheDreamerSection .TheDreamerContainer p{
+    color: #0E0E0E;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.TheDreamerSection .TheDreamerContainer img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.TheDreamerSection .TheDreamerContainer h3{
+    font-size: 18px;
+    color: #0E0E0E;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+        width: 100%;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+.mainContianer.moviesImageSlider{
+    max-width: 1100px;
+    margin: 0 auto 70px;
+}
+.mainContianer.moviesImageSlider .carousel-inner .carousel-item .card{
+    padding: 0 16px;
+    border: none !important;
+}
+@media(max-width: 767px){
+    .mainContianer.moviesImageSlider .carousel-inner .carousel-item .card,
+    .mainContianer.moviesImageSlider .carousel-inner .carousel-item .card img{
+        width: 100%;
+    }
+}
+.mainContianer.moviesImageSlider .carousel-control-prev{
+    background: linear-gradient(90deg, rgba(255,255,255,0.8421193184304971) 33%, rgba(255,255,255,0) 100%);
+}
+.mainContianer.moviesImageSlider .carousel-control-next,
+.mainContianer.moviesImageSlider .carousel-control-next:hover{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8421193184304971) 70%);
 }
