@@ -1358,7 +1358,7 @@ footer{
     background-image: url('../images/footerBg.png');
     background-size: cover;
     background-attachment: fixed;
-    padding: 70px 0;
+    padding: 70px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
