@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 /* font-family: "Bona Nova", serif; */
 /* font-family: "Inter", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
+/* font-family: "Yesteryear", cursive; */
 body,html{
     height: 100%;
     font-family: "Inter", sans-serif;
@@ -13,6 +15,78 @@ body{
     padding: 0;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
+}
+.commonBackgroundSection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-image: url('../images/commonBackground.png');
+}
+.commonBackgroundSection .commonHeadingSection{
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.commonBackgroundSection .commonHeadingSection h1{
+    color: #FAF9F6;
+    text-align: center;
+    font-family: "Bona Nova", serif;
+    font-size: 101px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.commonBackgroundSection .commonHeadingSection p{
+    color: rgba(250, 249, 246, 0.80);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+    max-width: 532px;
+    margin: 0 auto;
+}
+.commonBackgroundSection .topMenus{
+    max-width: 416px;
+    border-color: #FFFFFF;
+}
+.commonBackgroundSection .topMenus ul li a{
+    color: #FFFFFF;
+}
+.commonBackgroundSection .topMenus ul li a.letTalkMenu{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.commonBackgroundSection .topMenus.fixed{
+    background-color: #000000;
+    top: 0;
+}
+.commonBackgroundSection .learnMoreSection a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.commonBackgroundSection .learnMoreSection .textReadMore{
+    color: #FFFFFF;
+}
+.commonBackgroundSection .learnMoreSection .chevron:before,
+.commonBackgroundSection .learnMoreSection .chevron:after{
+    background: #FFFFFF;
 }
 .homeSectoin{
     position: relative;
@@ -784,3 +858,603 @@ animation: move 3s ease-out 2s infinite;
 .mainContianer.moviesImageSlider .carousel-control-next:hover{
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8421193184304971) 70%);
 }
+
+.disneysHomeSection.makingAmazonHomeSection{
+    background-image: url('../images/amazonProduct/homeBackground.png');
+    margin-bottom: 78px;
+}
+.disneysHomeSection.makingAmazonHomeSection h1{
+    max-width: 850px;
+}
+.disneysHomeSection.makingAmazonHomeSection .topMenus{
+    max-width: 394px;
+}
+.disneysHomeSection.makingAmazonHomeSection .topMenus ul li a{
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.disneysHomeSection.makingAmazonHomeSection .topMenus ul li a.letTalkMenu{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 4px;
+}
+.disneysHomeSection.makingAmazonHomeSection .homeContainer ul li{
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 50%, rgba(250,249,246,0.7) 60%);
+    text-transform: uppercase;
+}
+.disneysHomeSection.makingAmazonHomeSection .textReadMore{
+    font-size: 14px;
+    color: #000000;
+    z-index: 3;
+    bottom: 40px;
+}
+.makingAmazonHomeSection.disneysHomeSection .learnMoreSection .chevron::before,
+.makingAmazonHomeSection.disneysHomeSection .learnMoreSection .chevron::after{
+    background-color: #000000;
+}
+.makingAmazonHomeSection.disneysHomeSection .learnMoreSection img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    margin: auto;
+    width: 260px;
+}
+.amazonFrame_img img{
+    width: 100%;
+}
+.DarkPatternBox{
+    position: relative;
+    border-radius: 3px;
+    border: 3px solid #ECECEC;
+    background: #FFF;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+}
+.DarkPatternBox .darkPatterContents{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 50px 0 20px;
+}
+.DarkPatternBox .darkPatterContents h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+.DarkPatternBox .darkPatterContents p{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+.DarkPatternBox .darkPatterContents span{
+    background-color: #ECECEC;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 7px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 165%; /* 33px */
+    letter-spacing: 1px;
+    width: fit-content;
+}
+.DarkPatternBox .DarkPatternImg img{
+    width: 100%;
+}
+.PsychologicalPrinciplesSection{
+    position: relative;
+}
+.PsychologicalPrinciplesHeading h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+.PsychologicalPrinciplesSection .psychologicalCard{
+    position: relative;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    padding: 25px;
+    font-family: "Roboto", sans-serif;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.PsychologicalPrinciplesSection .psychologicalCard h3{
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+}
+.PsychologicalPrinciplesSection .psychologicalCard img{
+    margin: 24px 0;
+    width: 100%;
+}
+.PsychologicalPrinciplesSection .psychologicalCard p{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+    text-align: justify;
+}
+.mainContianer .amazonDiscountImg{
+    position: relative;
+}
+.mainContianer .amazonDiscountImg img{
+    width: 100%;
+}
+.mainContianer .StatusQueBiasWrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.mainContianer .StatusQueBias{
+    position: relative;
+    border-radius: 2px;
+    border: 3px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+}
+.mainContianer .StatusQueBias h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+.mainContianer .StatusQueBias span{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 130%; /* 26px */
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    background-color: #ECECEC;
+    padding: 2px 4px;
+}
+.mainContianer .StatusQueBias p{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+}
+@media(max-width: 767px){
+    .mainContianer .StatusQueBiasWrapper{
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+.butDiscountSection .butDiscountHeading{
+    position: relative;
+}
+.butDiscountSection .butDiscountHeading h2{
+    margin-bottom: 60px;
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    color: #000000;
+}
+.butDiscountSection .butDiscountHeading img{
+    width: 100%;
+}
+.SecondOrderEffect{
+    margin-top: 24px;
+    padding: 70px 40px;
+    position: relative;
+    border-radius: 2px;
+    border: 3px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+}
+.SecondOrderEffect h3{
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.SecondOrderEffect p{
+    color: #000;
+    text-align: justify;
+    /* Roboto Regular */
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+}
+.moreethicalSection .blankBox{
+    width: 100%;
+    height: 870px;
+    border: 3px solid rgba(0, 0, 0, 0.20);
+    background: #CDCDCD;
+}
+.moreethicalHeading h2{
+    position: relative;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.moreethicalSection .seamlessExperience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.moreethicalSection .seamlessExperience .ReadyForSeamless{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.moreethicalSection .seamlessExperience .ReadyForSeamless img{
+    width: 100%;
+    margin-bottom: 40px;
+    max-width: 300px;
+}
+.moreethicalSection .seamlessExperience .ReadyForSeamless h3{
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+.moreethicalSection .seamlessExperience .ReadyForSeamless a{
+    border-radius: 12px;
+    border: 3px solid rgba(185, 185, 185, 0.50);
+    background: #FFD600;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    display: flex;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.conclusionBox{
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+.conclusionBox .conclusionContainer{
+    position: relative;
+}
+.conclusionBox .conclusionContainer h2{
+    color:#101720;
+    font-family: "Bona Nova", serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    margin: 0;
+}
+.conclusionBox .conclusionContainer p{
+    color: #0E0E0E;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+    margin: 24px 0;
+    font-family: "Roboto", sans-serif;
+}
+.conclusionContainer .meetSign{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.conclusionContainer .meetSign img{
+    width: 70px;
+    margin-right: 10px;
+}
+.conclusionContainer .meetSign div{
+    display: flex;
+    align-items: initial;
+    justify-content: inherit;
+    flex-direction: column;
+}
+.conclusionContainer .meetSign div p{
+    font-family: "Yesteryear", cursive;
+    color:#101720;
+    text-align: justify;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 57.6px */
+    margin: 0;
+}
+.conclusionContainer .meetSign div span{
+    color: #101720;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 180%; /* 21.6px */
+    font-family: "Roboto", sans-serif;
+    margin-top: -18px;
+}
+#mainBlog.exploerSection{
+    margin: 80px auto 100px;
+}
+.exploerSection{
+    position: relative;
+}
+.exploerSection h2{
+    color: #101720;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.exploerSection .exploreSectionCards{
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    background: rgba(26, 70, 112, 0.10);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    padding: 32px 24px;
+    margin-bottom: 24px;
+}
+.exploerSection .exploreSectionCards a{
+    color: #000000;
+    text-decoration: none;
+}
+.exploerSection .exploreSectionCards a img{
+    width: 100%;
+}
+.exploerSection .exploreSectionCards a span{
+    text-align: center;
+    color: #101720;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.exploerSection .exploreSectionCards a h3{
+    color: #101720;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+.exploerSection .exploreSectionCards a p{
+    margin-bottom: 6px;
+    color: #505158;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+}
+.exploerSection .exploreSectionCards a i{
+    font-style: normal;
+    color:#505158;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    background: rgba(77, 78, 84, 0.20);
+    padding: 4px;
+    text-transform: uppercase;
+}
+@media(max-width: 767px){
+    .disneysHomeSection.makingAmazonHomeSection{
+        height: 60%;
+    }
+    .DarkPatternBox,
+    .conclusionBox{
+        margin: 0 30px;
+    }
+    .DarkPatternBox .darkPatterContents{
+        padding: 30px;
+    }
+    .PsychologicalPrinciplesHeading{
+        margin-top: 24px;
+    }
+    .PsychologicalPrinciplesSection .psychologicalCard{
+        height: auto;
+        margin-bottom: 24px;
+    }
+}
+
+@media(max-width: 575px){
+    .disneysHomeSection.makingAmazonHomeSection{
+        height: 70%;
+    }
+    .DarkPatternBox,
+    .conclusionBox{
+        margin: 0 15px;
+    }
+    .DarkPatternBox .darkPatterContents{
+        padding: 20px;
+    }
+
+}
+footer{
+    position: relative;
+    background-image: url('../images/footerBg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer span{
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+footer h4{
+    color: #FFF;
+    text-align: center;
+    font-family: "Bona Nova", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+    margin-bottom: 16px;
+}
+footer h3{
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 101px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 101px */
+    margin-bottom: 16px;
+}
+@media(max-width: 767px){
+    footer h3{
+        font-size: 80px;
+    }
+}
+@media(max-width: 575px){
+    footer h3{
+        font-size: 55px;
+    }
+}
+footer h5{
+    color: #FFF;
+    text-align: center;
+    font-family: "Bona Nova", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+    margin-bottom: 40px;
+}
+footer a{
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(20px);
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 80px;
+}
+footer a:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+}
+footer p{
+    margin: 0;
+    color:#FFFFFF;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 24px */
+    letter-spacing: 1.5px;
+}
+footer p i{
+    color: rgba(255, 255, 255, 0.70);
+    font-style: normal;
+}
+
+/* font-family: "Bona Nova", serif; */
+/* font-family: "Inter", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Yesteryear", cursive; */
