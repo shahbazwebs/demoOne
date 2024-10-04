@@ -1453,7 +1453,118 @@ footer p i{
     color: rgba(255, 255, 255, 0.70);
     font-style: normal;
 }
-
+#ContactUsSection{
+    position: relative;
+    margin: 60px 0;
+}
+.contactUsImg img{
+    width: 100%;
+}
+.contactUsForm{
+    position: relative;
+}
+.contactUsForm form{
+    padding: 32px;
+    border-radius: 10px;
+    border: 1px solid rgba(26, 70, 112, 0.15);
+    background: rgba(26, 70, 112, 0.05);
+}
+.contactUsForm form .formFeild{
+    margin: 0 0 24px 0;
+    position: relative;
+}
+.contactUsForm form .formFeild input,
+.contactUsForm form .formFeild textarea{
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(26, 70, 112, 0.15);
+    background: rgba(26, 70, 112, 0.05);
+    width: 100%;
+}
+.contactUsForm form .formFeild textarea{
+    height: 200px;
+    resize: none;
+}
+.contactUsForm form .formFeild input:focus,
+.contactUsForm form .formFeild textarea:focus{
+    border: solid 1px #000000;
+    box-shadow: none;
+    outline: none;
+}
+.contactUsForm form .formFeild button,
+.contactUsForm form .formFeild a{
+    border-radius: 6px;
+    background: #1A4670;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    border: solid 1px transparent;
+    padding: 16px;
+    color:#FAF9F6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+    width: 100%;
+    text-decoration: none;
+}
+.contactUsForm form .formFeild button:hover,
+.contactUsForm form .formFeild a:hover{
+    border: solid 1px #1A4670;
+    color: #1A4670;
+    background-color: transparent;
+}
+.otherButtons{
+    position: relative;
+    margin-top: 24px;
+}
+.otherButtons button{
+    border-radius: 2px;
+    border: 1px solid rgba(41, 104, 62, 0.15);
+    background: rgba(26, 70, 112, 0.05);
+    padding: 12px 16px;
+}
+.otherButtons button:focus{
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+}
+.otherButtons button.callNow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.otherButtons button.callNow svg{
+    margin-right: 8px;
+}
+.otherButtons ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.otherButtons ul li{
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+.otherButtons ul li button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width: 440px){
+    .otherButtons ul li{
+        width: 100%;
+    }
+}
 /* font-family: "Bona Nova", serif; */
 /* font-family: "Inter", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
