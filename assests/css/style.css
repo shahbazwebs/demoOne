@@ -1577,6 +1577,253 @@ footer p i{
         width: 100%;
     }
 }
+.walmartHeroSection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(99.88% 114.91% at 49.17% 100%, #1975CE 0%, #0059A1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.narBar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30px;
+    width: fit-content;
+    padding: 12px 20px;
+    border-radius: 47px;
+    border: 1.5px solid #8C8C8C;
+    background: var(--Miscellaneous-Bar-border, rgba(0, 0, 0, 0.30));
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.10) inset;
+    backdrop-filter: blur(15px);
+}
+.narBar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.narBar ul li a{
+    text-decoration: none;
+    color:#ECECEC;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 20.8px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.narBar ul li:last-child a{
+    border-radius: 39px;
+    border: 1px solid #FFF;
+    background: rgba(250, 249, 246, 0.80);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color:#101720;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 20.8px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+@media(max-width: 767px){
+    .narBar{
+        top: 15px;
+    }
+    .narBar ul{
+        gap: 16px;
+    }
+    .narBar ul li a{
+        font-size: 12px;
+    }
+}
+.walmartHeading{
+    position: relative;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.walmartHeading h1{
+    color:#FAF9F6;
+    text-align: center;
+    font-family: "Bona Nova";
+    font-size: 77px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    max-width: 1416px;
+}
+.walmartHeading ul{
+    list-style: none;
+    padding: 0;
+    margin: 70px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.walmartHeading ul li{
+    padding: 20px 60px;
+    border-radius: 65px;
+    border: 1.5px solid #FFF;
+    background: var(--color-blue-white-background, rgba(255, 255, 255, 0.20));
+    backdrop-filter: blur(20px);
+    color: rgba(250, 249, 246, 0.60);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.walmartHeading img{
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+@media(max-width: 1366px){
+    .walmartHeading h1{
+        font-size: 60px;
+        padding: 0 30px;
+        max-width: 1140px;
+    }
+    .walmartHeading ul li{
+        padding: 10px 40px;
+    }
+}
+.aboutWalmart{
+    position: relative;
+}
+.walmartAboutText{
+    position: relative;
+    margin: 70px 0 60px 0;
+    color: #0E0E0E;
+    text-align: justify;
+    font-family: "Bona Nova";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 45px */
+    letter-spacing: 0.5px;
+}
+.aboutWalmart h2{
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 40.8px */
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+.aboutWalmart  p{
+    color: #505158;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+@media(max-width: 1366px){
+    .walmartAboutText{
+        font-size: 24px;
+    }
+    .aboutWalmart h2{
+        font-size: 28px;
+    }
+    .aboutWalmart  p{
+        font-size: 18px;
+    }
+}
+@media(max-width: 767px){
+    .walmartAboutText{
+        font-size: 20px;
+    }
+    .aboutWalmart h2{
+        font-size: 22px;
+    }
+}
+.walmartSlider{
+    position: relative;
+    width: 80%;
+    margin: 0 auto 60px;
+}
+.meetNavadiyaAboutMe{
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid rgba(26, 70, 112, 0.15);
+    background: rgba(26, 70, 112, 0.05);
+    padding: 22px 32px;
+    margin-top: 60px;
+}
+.meetNavadiyaAboutMe span{
+    color:#101720;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 18px */
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 24px;
+}
+.meetNavadiyaAboutMe h2{
+    color: #101720;
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 54px */
+    margin-bottom: 24px;
+}
+.meetNavadiyaAboutMe p{
+    margin-bottom: 24px;
+    color: #505158;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+}
+@media(max-width: 1366px){
+    .meetNavadiyaAboutMe span{
+        font-size: 14px;
+    }
+    .meetNavadiyaAboutMe h2{
+        font-size: 30px;
+    }
+    .meetNavadiyaAboutMe p{
+        font-size: 18px;
+    }
+}
+@media(max-width: 1366px){}
 /* font-family: "Bona Nova", serif; */
 /* font-family: "Inter", sans-serif; */
 /* font-family: "Roboto", sans-serif; */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1A4670" />
+    <title>Navadiya Blog | Prodcut Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="commonBackgroundSection">
+        <div class="narBar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Let's Talk</a></li>
+            </ul>
+        </div>
+        <div class="commonHeadingSection">
+            <h1>Meet Navadiya</h1>
+            <p style="max-width: 700px;">A Product designer with a passion for crafting user-centered solutions that balance creativity and functionality</p>
+        </div>
+        <div class="learnMoreSection">
+            <a href="#aboutMeSection">
+                <span class="textReadMore">Contact</span>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="mainContianer meetNavadiyaAboutMe" id="aboutMeSection">
+        <span>MEET NAVADIYA</span>
+        <h2>Your Partner in  Designing your Vision Boldly</h2>
+        <p>A passionate product designer with a focus on creating user-centered digital experiences that are both functional and distinct. My design journey started with a deep curiosity for how people interact with technology, and over the years, I’ve honed my skills to craft solutions that not only solve problems but also deliver seamless, delightful experiences.</p>
+        <h3>My Design Philosophy</h3>
+        <p>I believe in the power of empathy in design. Every project I work on starts with understanding the user—their needs, pain points, and motivations. By blending creativity with research and testing, I aim to create designs that are not only aesthetically pleasing but also intuitive and accessible for all users.</p>
+        <h3>Experience & Skills</h3>
+        <p>I’ve had the opportunity to work on a range of projects, from mobile apps to complex web platforms. My expertise spans across UX research, wire-framing, prototyping, UI design, and usability testing. I’m fluent in design tools like Figma, Sketch, Adobe XD, and more. I enjoy collaborating closely with cross-functional teams to bring ideas to life.</p>
+        <h3>What Drives Me</h3>
+        <p>Finding new ways to solve problems, is the primary reason why I choose to become Product designer. I’m always looking for ways to grow and push the boundaries of my creativity.</p>
+        <img src="assests/images/MyImg.png" alt="" style="margin: 24px 0; width: 100%;">
+    </div>
+
+    <footer>
+        <span>Project in mind?</span>
+        <h4>LET’S</h4>
+        <h3>MAKE A DIFFERENCE</h3>
+        <h5>TOGETHER</h5>
+        <a href="">
+            GET IN TOUCH
+            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="ph:arrow-up-right-light">
+                <path id="Vector" d="M23.2039 7.73511V19.9226C23.2039 20.1091 23.1298 20.2879 22.9979 20.4198C22.8661 20.5517 22.6872 20.6257 22.5007 20.6257C22.3143 20.6257 22.1354 20.5517 22.0036 20.4198C21.8717 20.2879 21.7976 20.1091 21.7976 19.9226V9.43433L7.99293 23.2273C7.8624 23.3578 7.68535 23.4312 7.50075 23.4312C7.31614 23.4312 7.13909 23.3578 7.00856 23.2273C6.87802 23.0968 6.80469 22.9197 6.80469 22.7351C6.80469 22.5505 6.87802 22.3735 7.00856 22.2429L20.8015 8.43823H10.3132C10.1268 8.43823 9.94792 8.36415 9.81606 8.23229C9.6842 8.10043 9.61012 7.92159 9.61012 7.73511C9.61012 7.54863 9.6842 7.36978 9.81606 7.23792C9.94792 7.10606 10.1268 7.03198 10.3132 7.03198H22.5007C22.6872 7.03198 22.8661 7.10606 22.9979 7.23792C23.1298 7.36978 23.2039 7.54863 23.2039 7.73511Z" fill="white"/>
+                </g>
+            </svg>    
+        </a>
+        <p><i>Designed by</i> <a href="meetNavadiya.html">Meet Navadiya</a></p>
+    </footer>
+
+
+    
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+      var topMenus = $('.topMenus'),
+          scroll = $(window).scrollTop();
+            if (scroll >= 200) topMenus.addClass('fixed');
+            else topMenus.removeClass('fixed');
+        });
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
+</body>
+</html>
