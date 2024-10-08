@@ -1257,12 +1257,17 @@ animation: move 3s ease-out 2s infinite;
 }
 .exploerSection .exploreSectionCards{
     position: relative;
-    border-radius: 2px;
-    border: 2px solid rgba(0, 0, 0, 0.10);
-    background: rgba(26, 70, 112, 0.10);
+    border-radius: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
-    padding: 32px 24px;
+    padding: 30px 20px;
     margin-bottom: 24px;
+}
+@media(max-width: 767px){
+    .exploerSection .exploreSectionCards{
+        padding: 20px 16px;
+    }
 }
 .exploerSection .exploreSectionCards a{
     color: #000000;
@@ -1270,6 +1275,7 @@ animation: move 3s ease-out 2s infinite;
 }
 .exploerSection .exploreSectionCards a img{
     width: 100%;
+    border-radius: 12px;
 }
 .exploerSection .exploreSectionCards a span{
     text-align: center;
@@ -1366,8 +1372,9 @@ footer{
 }
 footer span{
     color: #FFF;
+    color: #FFF;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    font-family: "Satoshi Variable";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1417,8 +1424,9 @@ footer h5{
     margin-bottom: 40px;
 }
 footer a{
+    border-radius: 53px;
     border: 1px solid #FFF;
-    background: rgba(0, 0, 0, 0.20);
+    background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(20px);
     display: flex;
     padding: 20px 30px;
@@ -1439,7 +1447,7 @@ footer a:hover{
     cursor: pointer;
     color: #FFFFFF;
 }
-footer p{
+footer p.footerBottomText{
     margin: 0;
     color:#FFFFFF;
     font-family: Roboto;
@@ -1449,9 +1457,17 @@ footer p{
     line-height: 160%; /* 24px */
     letter-spacing: 1.5px;
 }
-footer p i{
+footer p.footerBottomText i{
     color: rgba(255, 255, 255, 0.70);
     font-style: normal;
+}
+footer p.footerBottomText a{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0;
 }
 #ContactUsSection{
     position: relative;
@@ -1600,6 +1616,7 @@ footer p i{
     background: var(--Miscellaneous-Bar-border, rgba(0, 0, 0, 0.30));
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.10) inset;
     backdrop-filter: blur(15px);
+    z-index: 99;
 }
 .narBar ul{
     list-style: none;
@@ -1619,8 +1636,9 @@ footer p i{
     line-height: 160%; /* 20.8px */
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
-.narBar ul li:last-child a{
+.narBar ul li a.letsTalkMenu{
     border-radius: 39px;
     border: 1px solid #FFF;
     background: rgba(250, 249, 246, 0.80);
@@ -1638,6 +1656,34 @@ footer p i{
     line-height: 160%; /* 20.8px */
     letter-spacing: 1.5px;
     text-transform: uppercase;
+}
+.narBar ul li ul{
+    position: absolute;
+    width: 180px;
+    border: 1.5px solid #8C8C8C;
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.10) inset;
+    backdrop-filter: blur(15px);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 0;
+    display: none;
+}
+.narBar ul li ul li a{
+    text-decoration: none;
+    color:#ECECEC;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 20.8px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.narBar ul li:hover ul{
+    display: flex;
 }
 @media(max-width: 767px){
     .narBar{
@@ -1739,6 +1785,14 @@ footer p i{
     letter-spacing: 1px;
     margin-bottom: 24px;
 }
+.aboutWalmart h3{
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 31.2px */   
+}
 .aboutWalmart  p{
     color: #505158;
     text-align: justify;
@@ -1757,6 +1811,9 @@ footer p i{
     .aboutWalmart h2{
         font-size: 28px;
     }
+    .aboutWalmart h3{
+        font-size: 24px;
+    }
     .aboutWalmart  p{
         font-size: 18px;
     }
@@ -1774,6 +1831,7 @@ footer p i{
     width: 80%;
     margin: 0 auto 60px;
 }
+
 .meetNavadiyaAboutMe{
     position: relative;
     border-radius: 3px;
@@ -1781,6 +1839,7 @@ footer p i{
     background: rgba(26, 70, 112, 0.05);
     padding: 22px 32px;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 .meetNavadiyaAboutMe span{
     color:#101720;
@@ -1823,7 +1882,179 @@ footer p i{
         font-size: 18px;
     }
 }
-@media(max-width: 1366px){}
+.MyHighlightSection{
+    position: relative;
+}
+.MyHighlightSection h2{
+    margin-bottom: 24px;
+    color: #101720;
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.MyHighlightSection ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;    
+}
+.MyHighlightSection ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(26, 70, 112, 0.15);
+    background: rgba(26, 70, 112, 0.05);
+    padding: 10px 16px;
+}
+.MyHighlightSection ul li p{
+    margin: 0;
+    color: var(--color-body-text, #505158);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+}
+.MyHighlightSection ul li span{
+    color:#505158;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+}
+.MyHighlightSection .myReadings{
+    border-radius: 2px;
+    border: 1px solid rgba(26, 70, 112, 0.15);
+    background: rgba(26, 70, 112, 0.05);
+    padding: 32px;
+}
+.MyHighlightSection .myReadings ul{
+    display: flex;
+    flex-direction: column;
+}
+.MyHighlightSection .myReadings ul li{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.MyHighlightSection .socailMediaSection{
+    position: relative;
+}
+.MyHighlightSection .socailMediaSection ul{
+    display: flex;
+    align-items: center;
+}
+.MyHighlightSection .socailMediaSection ul li{
+    display: flex;
+    flex: 1;
+}
+.MyHighlightSection .socailMediaSection ul li button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+@media(max-width: 1366px){
+    .MyHighlightSection h2{
+        font-size: 35px;
+    }
+    .MyHighlightSection ul li p{
+        font-size: 16px;
+    }
+    .MyHighlightSection ul li span{
+        font-size: 16px;
+    }
+}
+@media(max-width: 767px){
+    .MyHighlightSection h2{
+        font-size: 26px;
+    }
+    .MyHighlightSection ul{
+        gap: 2px;
+    }
+    .MyHighlightSection ul li{
+        width: 100%;
+    }
+}
+.myCVButton{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.myCVButton button{
+    border-radius: 8px;
+    background: #1A4670;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    color: #FAF9F6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: 0.5px;
+    border: solid 1px #1A4670;
+    width: 40%;
+}
+.myCVButton button:hover{
+    background-color: #FFFFFF;
+    border: solid 1px #1A4670;
+    color: #1A4670;
+}
+.LightUpYourEntertainmentHeroSection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/LightUpYourEntertainment_bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.LightUpYourEntertainmentHeroSection .walmartHeading ul li{
+    border: solid 1.5px #FFFFFF;   
+}
+.LightUpYourEntertainmentHeroSection .walmartHeading img{
+    width: 250px;
+}
+.aboutLightUpYour{
+    position: relative;
+    margin: 60px auto;
+}
+.aboutLightUpYour p{
+    color: #0E0E0E;
+    text-align: justify;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 45px */
+    letter-spacing: 0.5px;
+}
+@media(max-width: 1366px){
+    .aboutLightUpYour p{
+        font-size: 22px;
+        line-height: 130%; /* 45px */
+    }
+}
+@media(max-width: 767px){
+    .aboutLightUpYour p{
+        font-size: 20px;
+        line-height: 120%; /* 45px */
+    }
+}
 /* font-family: "Bona Nova", serif; */
 /* font-family: "Inter", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
